@@ -1,0 +1,247 @@
+[
+  {
+    "id": "1",
+    "title": "Player Unknowns Battle Ground: PUBG",
+    "coverPhoto": "https://i.ibb.co.com/s9N45h1Y/G1.jpg",
+    "category": "FPS",
+    "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
+    "description": "PUBG Mobile is a fast-paced battle royale game where players fight for survival, strategy, and victory on dynamic maps.",
+    "ratings": "4.5",
+    "developer": "Krafton"
+  },
+  {
+    "id": "2",
+    "title": "Call of Duty Mobile",
+    "coverPhoto": "https://i.ibb.co.com/V07f4gHL/G2.jpg",
+    "category": "FPS",
+    "downloadLink": "https://www.callofduty.com/mobile",
+    "description": "Call of Duty Mobile delivers intense multiplayer and battle royale FPS action on mobile devices.",
+    "ratings": "4.6",
+    "developer": "Activision"
+  },
+  {
+    "id": "3",
+    "title": "Valorant",
+    "coverPhoto": "https://i.ibb.co.com/r2w4nxBX/G3.jpg",
+    "category": "FPS",
+    "downloadLink": "https://playvalorant.com",
+    "description": "Valorant is a tactical FPS game focused on precise gunplay and unique agent abilities.",
+    "ratings": "4.7",
+    "developer": "Riot Games"
+  },
+  {
+    "id": "4",
+    "title": "Counter-Strike 2",
+    "coverPhoto": "https://i.ibb.co.com/WSb2rcw/G4.jpg",
+    "category": "FPS",
+    "downloadLink": "https://store.steampowered.com",
+    "description": "Counter-Strike 2 is a competitive FPS game emphasizing teamwork and skill-based combat.",
+    "ratings": "4.8",
+    "developer": "Valve"
+  },
+
+  {
+    "id": "5",
+    "title": "Clash of Clans",
+    "coverPhoto": "https://i.ibb.co.com/zhRMZJ0J/G5.jpg",
+    "category": "Strategy",
+    "downloadLink": "https://supercell.com/en/games/clashofclans/",
+    "description": "Clash of Clans is a strategy game where players build villages and battle other clans.",
+    "ratings": "4.6",
+    "developer": "Supercell"
+  },
+  {
+    "id": "6",
+    "title": "Age of Empires IV",
+    "coverPhoto": "https://i.ibb.co.com/TMN7hs6L/G6.jpg",
+    "category": "Strategy",
+    "downloadLink": "https://www.ageofempires.com",
+    "description": "Age of Empires IV is a real-time strategy game set across historical eras.",
+    "ratings": "4.4",
+    "developer": "Relic Entertainment"
+  },
+  {
+    "id": "7",
+    "title": "Civilization VI",
+    "coverPhoto": "https://i.ibb.co.com/PGPTCD9d/G7.jpg",
+    "category": "Strategy",
+    "downloadLink": "https://civilization.com",
+    "description": "Civilization VI allows players to build empires and shape world history.",
+    "ratings": "4.7",
+    "developer": "Firaxis Games"
+  },
+  {
+    "id": "8",
+    "title": "Plants vs Zombies",
+    "coverPhoto": "https://i.ibb.co.com/1tdTdM7R/G8.jpg",
+    "category": "Strategy",
+    "downloadLink": "https://www.ea.com",
+    "description": "Plants vs Zombies is a fun strategy game where plants defend against zombies.",
+    "ratings": "4.5",
+    "developer": "PopCap Games"
+  },
+
+  {
+    "id": "9",
+    "title": "FIFA Mobile",
+    "coverPhoto": "https://i.ibb.co.com/x8KktM8G/G9.jpg",
+    "category": "Sports",
+    "downloadLink": "https://www.ea.com/games/fifa/fifa-mobile",
+    "description": "FIFA Mobile offers realistic football gameplay with real teams and players.",
+    "ratings": "4.3",
+    "developer": "EA Sports"
+  },
+  {
+    "id": "10",
+    "title": "eFootball 2024",
+    "coverPhoto": "https://i.ibb.co.com/fV4mX7cX/G10.jpg",
+    "category": "Sports",
+    "downloadLink": "https://www.konami.com",
+    "description": "eFootball delivers competitive soccer action with updated squads.",
+    "ratings": "4.2",
+    "developer": "Konami"
+  },
+  {
+    "id": "11",
+    "title": "NBA 2K Mobile",
+    "coverPhoto": "https://i.ibb.co.com/1fffcG4T/G11.jpg",
+    "category": "Sports",
+    "downloadLink": "https://nba.2k.com",
+    "description": "NBA 2K Mobile brings realistic basketball gameplay to mobile devices.",
+    "ratings": "4.4",
+    "developer": "2K Games"
+  },
+  {
+    "id": "12",
+    "title": "Cricket League",
+    "coverPhoto": "https://i.ibb.co.com/vCdLSkRr/G12.jpg",
+    "category": "Sports",
+    "downloadLink": "https://play.google.com",
+    "description": "Cricket League is a fast-paced cricket game with multiplayer matches.",
+    "ratings": "4.1",
+    "developer": "Miniclip"
+  },
+
+  {
+    "id": "13",
+    "title": "Genshin Impact",
+    "coverPhoto": "https://i.ibb.co.com/SDjyCgDq/G13.jpg",
+    "category": "RPG",
+    "downloadLink": "https://genshin.hoyoverse.com",
+    "description": "Genshin Impact is an open-world RPG with stunning visuals and elemental combat.",
+    "ratings": "4.6",
+    "developer": "HoYoverse"
+  },
+  {
+    "id": "14",
+    "title": "Final Fantasy VII Remake",
+    "coverPhoto": "https://i.ibb.co.com/4wdpNshh/G14.png",
+    "category": "RPG",
+    "downloadLink": "https://square-enix-games.com",
+    "description": "Final Fantasy VII Remake reimagines a classic RPG with modern gameplay.",
+    "ratings": "4.8",
+    "developer": "Square Enix"
+  },
+  {
+    "id": "15",
+    "title": "Elden Ring",
+    "coverPhoto": "https://i.ibb.co.com/s92vJpvP/G15.jpg",
+    "category": "RPG",
+    "downloadLink": "https://en.bandainamcoent.eu",
+    "description": "Elden Ring is a dark fantasy action RPG with an expansive open world.",
+    "ratings": "4.9",
+    "developer": "FromSoftware"
+  },
+  {
+    "id": "16",
+    "title": "Diablo Immortal",
+    "coverPhoto": "https://i.ibb.co.com/VYdLczcc/G16.jpg",
+    "category": "RPG",
+    "downloadLink": "https://diabloimmortal.blizzard.com",
+    "description": "Diablo Immortal is an action RPG featuring dungeon crawling and loot.",
+    "ratings": "4.0",
+    "developer": "Blizzard Entertainment"
+  },
+
+  {
+    "id": "17",
+    "title": "Subway Surfers",
+    "coverPhoto": "https://i.ibb.co.com/BKGc4skx/G17.jpg",
+    "category": "Arcade",
+    "downloadLink": "https://sybogames.com",
+    "description": "Subway Surfers is an endless runner arcade game with colorful visuals.",
+    "ratings": "4.5",
+    "developer": "SYBO Games"
+  },
+  {
+    "id": "18",
+    "title": "Temple Run 2",
+    "coverPhoto": "https://i.ibb.co.com/dwGr5PLz/G18.jpg",
+    "category": "Arcade",
+    "downloadLink": "https://imangistudios.com",
+    "description": "Temple Run 2 is an arcade runner game filled with obstacles and adventures.",
+    "ratings": "4.4",
+    "developer": "Imangi Studios"
+  },
+  {
+    "id": "19",
+    "title": "Angry Birds",
+    "coverPhoto": "https://i.ibb.co.com/xKCDY81V/G19.jpg",
+    "category": "Arcade",
+    "downloadLink": "https://www.rovio.com",
+    "description": "Angry Birds is a physics-based arcade puzzle game with fun challenges.",
+    "ratings": "4.3",
+    "developer": "Rovio"
+  },
+  {
+    "id": "20",
+    "title": "Fruit Ninja",
+    "coverPhoto": "https://i.ibb.co.com/1YC945fs/G20.jpg",
+    "category": "Arcade",
+    "downloadLink": "https://halfbrick.com",
+    "description": "Fruit Ninja is a fast-paced arcade game focused on slicing fruits.",
+    "ratings": "4.4",
+    "developer": "Halfbrick Studios"
+  },
+
+  {
+    "id": "21",
+    "title": "Need for Speed No Limits",
+    "coverPhoto": "https://i.ibb.co.com/9H0M1qWC/G21.jpg",
+    "category": "Racing",
+    "downloadLink": "https://www.ea.com/games/need-for-speed",
+    "description": "Need for Speed No Limits is a high-speed racing game with car customization.",
+    "ratings": "4.2",
+    "developer": "Electronic Arts"
+  },
+  {
+    "id": "22",
+    "title": "Asphalt 9 Legends",
+    "coverPhoto": "https://i.ibb.co.com/RkK3Y7LW/G22.jpg",
+    "category": "Racing",
+    "downloadLink": "https://www.gameloft.com",
+    "description": "Asphalt 9 Legends offers arcade-style racing with licensed supercars.",
+    "ratings": "4.6",
+    "developer": "Gameloft"
+  },
+  {
+    "id": "23",
+    "title": "Real Racing 3",
+    "coverPhoto": "https://i.ibb.co.com/Kxm8bGKV/G23.jpg",
+    "category": "Racing",
+    "downloadLink": "https://www.ea.com",
+    "description": "Real Racing 3 provides realistic racing physics and real-world tracks.",
+    "ratings": "4.4",
+    "developer": "Firemonkeys Studios"
+  },
+  {
+    "id": "24",
+    "title": "CarX Drift Racing",
+    "coverPhoto": "https://i.ibb.co.com/6RwcJn3w/G24.jpg",
+    "category": "Racing",
+    "downloadLink": "https://carx-online.com",
+    "description": "CarX Drift Racing focuses on realistic drifting mechanics and car tuning.",
+    "ratings": "4.3",
+    "developer": "CarX Technologies"
+  }
+]
