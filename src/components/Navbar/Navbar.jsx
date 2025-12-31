@@ -8,7 +8,7 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "Home", path: "/", icon: <Gamepad2 size={18} /> },
-    { name: "All Games", path: "/games", icon: <Gamepad2 size={18} /> },
+    { name: "All Games", path: "/all-games", icon: <Gamepad2 size={18} /> },
     { name: "My Profile", path: "/profile", icon: <User size={18} /> },
     { name: "My Installations", path: "/installations", icon: <Download size={18} /> },
   ];
