@@ -8,7 +8,7 @@ const images = [B1, B2, B3, B4, B5];
 
 const Slider = () => {
   return (
-    <section className="w-screen h-[30vh] sm:h-[35vh] md:h-[40vh] lg:h-[45vh] overflow-hidden">
+    <section className="w-full h-[30vh] sm:h-[35vh] md:h-[40vh] lg:h-[45vh] overflow-hidden box-border">
       <div className="carousel w-full h-full">
         {images.map((image, index) => (
           <div
@@ -20,7 +20,7 @@ const Slider = () => {
             <img
               src={image}
               alt={`Banner ${index + 1}`}
-              className="max-w-full max-h-full object-contain"
+              className="w-full h-full object-contain"
             />
 
             {/* Navigation */}
