@@ -8,7 +8,7 @@ const images = [B1, B2, B3, B4, B5];
 
 const Slider = () => {
   return (
-    <section className="w-screen h-[65vh] md:h-[75vh] lg:h-[85vh] overflow-hidden">
+    <section className="w-screen h-[30vh] sm:h-[35vh] md:h-[40vh] lg:h-[45vh] overflow-hidden">
       <div className="carousel w-full h-full">
         {images.map((image, index) => (
           <div
