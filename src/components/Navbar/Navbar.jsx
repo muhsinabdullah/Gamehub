@@ -1,107 +1,103 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import { Sun, Moon, Menu, X } from "lucide-react";
+import { NavLink, Link } from "react-router";
+import { Menu, X, Gamepad2, User, Download } from "lucide-react";
+import { useState } from "react";
 import logo from "../../assets/logo.png";
 
-const Navbar = ({ darkMode, setDarkMode }) => {
-  const [menuOpen, setMenuOpen] = useState(false);
+const Navbar = () => {
+  const [open, setOpen] = useState(false);
 
   const navLinks = [
-    { name: "Home", path: "/" },
-    { name: "All Games", path: "/all-games" },
-    { name: "My Profile", path: "/profile" },
-    { name: "My Installation", path: "/installation" },
+    { name: "Home", path: "/", icon: <Gamepad2 size={18} /> },
+    { name: "All Games", path: "/games", icon: <Gamepad2 size={18} /> },
+    { name: "My Profile", path: "/profile", icon: <User size={18} /> },
+    { name: "My Installations", path: "/installations", icon: <Download size={18} /> },
   ];
 
   return (
-    <nav className={`shadow-md fixed w-full z-50 transition-colors ${darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"}`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 items-center">
+    <nav className="sticky top-0 z-50 backdrop-blur-xl bg-base-100/80 border-b border-base-300">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="flex h-16 items-center justify-between">
+          
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <NavLink to="/">
-              <img src={logo} alt="Gamehub Logo" className="h-10 w-auto" />
-            </NavLink>
-          </div>
+          <Link to="/" className="flex items-center gap-2">
+            <img src={logo} alt="Gamehub Logo" className="w-10 h-10" />
+            <span className="text-xl font-bold tracking-wide bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              Gamehub
+            </span>
+          </Link>
 
-          {/* Desktop Links */}
-          <div className="hidden md:flex space-x-6 items-center">
+          {/* Desktop Menu */}
+          <div className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
               <NavLink
                 key={link.name}
                 to={link.path}
                 className={({ isActive }) =>
-                  `font-medium hover:text-indigo-500 transition ${
-                    isActive ? "text-indigo-600" : darkMode ? "text-white" : "text-gray-800"
+                  `flex items-center gap-1 font-medium transition-all
+                  ${
+                    isActive
+                      ? "text-primary"
+                      : "text-base-content/70 hover:text-primary"
                   }`
                 }
               >
+                {link.icon}
                 {link.name}
               </NavLink>
             ))}
 
-            {/* Dark/Light Mode */}
-            <button
-              onClick={() => setDarkMode(!darkMode)}
-              className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition"
-            >
-              {darkMode ? <Sun size={20} /> : <Moon size={20} />}
-            </button>
-
-            {/* Login */}
-            <NavLink
+            {/* Login Button */}
+            <Link
               to="/login"
-              className="ml-4 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-500 transition"
+              className="px-5 py-2 rounded-xl font-semibold text-white
+              bg-gradient-to-r from-primary to-secondary
+              hover:scale-105 transition-transform shadow-lg"
             >
               Login
-            </NavLink>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center">
-            <button
-              onClick={() => setMenuOpen(!menuOpen)}
-              className="p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition"
-            >
-              {menuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
+          <button
+            onClick={() => setOpen(!open)}
+            className="md:hidden btn btn-ghost"
+          >
+            {open ? <X /> : <Menu />}
+          </button>
         </div>
       </div>
 
-      {/* Mobile Menu */}
-      {menuOpen && (
-        <div className={`md:hidden px-4 pt-2 pb-4 space-y-2 transition-colors ${darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"}`}>
-          {navLinks.map((link) => (
-            <NavLink
-              key={link.name}
-              to={link.path}
-              onClick={() => setMenuOpen(false)}
-              className={({ isActive }) =>
-                `block font-medium hover:text-indigo-500 transition ${
-                  isActive ? "text-indigo-600" : darkMode ? "text-white" : "text-gray-800"
-                }`
-              }
-            >
-              {link.name}
-            </NavLink>
-          ))}
+      {/* Mobile Dropdown */}
+      {open && (
+        <div className="md:hidden bg-base-100 border-t border-base-300">
+          <div className="flex flex-col px-4 py-4 gap-3">
+            {navLinks.map((link) => (
+              <NavLink
+                key={link.name}
+                to={link.path}
+                onClick={() => setOpen(false)}
+                className={({ isActive }) =>
+                  `flex items-center gap-2 px-3 py-2 rounded-lg
+                  ${
+                    isActive
+                      ? "bg-primary text-white"
+                      : "hover:bg-base-200"
+                  }`
+                }
+              >
+                {link.icon}
+                {link.name}
+              </NavLink>
+            ))}
 
-          <div className="flex items-center justify-between mt-2">
-            <button
-              onClick={() => setDarkMode(!darkMode)}
-              className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition"
-            >
-              {darkMode ? <Sun size={20} /> : <Moon size={20} />}
-            </button>
-
-            <NavLink
+            <Link
               to="/login"
-              onClick={() => setMenuOpen(false)}
-              className="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-500 transition"
+              onClick={() => setOpen(false)}
+              className="mt-2 text-center px-4 py-2 rounded-xl font-semibold text-white
+              bg-gradient-to-r from-primary to-secondary"
             >
               Login
-            </NavLink>
+            </Link>
           </div>
         </div>
       )}
