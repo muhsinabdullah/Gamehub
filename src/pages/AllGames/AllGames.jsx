@@ -32,7 +32,7 @@ const AllGames = () => {
 
     return (
         <>
-
+            <title>All Games</title>
             {/* -------------------- Full-width Banner -------------------- */}
             <div className="w-full mb-10 mt-10 flex justify-between">
                 <div className="max-w-7xl mx-auto">

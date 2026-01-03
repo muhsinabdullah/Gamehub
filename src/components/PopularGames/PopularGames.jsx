@@ -50,16 +50,6 @@ const PopularGames = () => {
                 <span className="text-gray-700 font-medium">{game.ratings}</span>
               </div>
             </div>
-
-            {/* Install Button */}
-            <a
-              href={game.downloadLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-primary btn-block rounded-none mt-auto"
-            >
-              Install
-            </a>
           </div>
         ))}
       </div>
